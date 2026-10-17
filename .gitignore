@@ -1,0 +1,14 @@
+# Python environment and caches
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# backups made while editing the notebook
+*.backup.ipynb
+*.before_*.ipynb
+
+# cache from the first experiment notebook (XOR_contest.ipynb), ~4 MB, regenerated on run
+results_cache.json
