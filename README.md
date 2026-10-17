@@ -61,6 +61,8 @@ jupyter nbconvert --to webpdf DLFBT_Valvezan_Anne_XOR_contest.ipynb
 
 ## Author
 
-**Anne Valvezan**
+**Anne Valvezan** · [GitHub @coffeedrunkpanda](https://github.com/coffeedrunkpanda)
 
-XOR contest assignment for the course DLFBT, part of the Master DL4AV.
+XOR contest assignment for the course DLFBT, part of the
+[Master in Deep Learning for Audio and Visual Artificial Intelligence](https://www.uam.es/uam/master-universitario-aprendizaje-profundo-tratamiento-senales-audio-video) 
+at Universidad Autónoma de Madrid, 2026.
