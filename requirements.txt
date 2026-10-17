@@ -1,0 +1,22 @@
+# XOR contest notebook — tested with Python 3.11
+# Setup:
+#   python3.11 -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+
+# deep learning
+tensorflow==2.21.0
+keras==3.15.1
+
+# data and plots
+numpy==2.4.6
+pandas==3.0.6
+matplotlib==3.11.2
+plotly==7.1.0
+kaleido==1.5.0        # static PNG export of plotly figures (PDF report)
+
+# notebook
+ipykernel==7.4.0
+nbformat==5.11.1      # needed by plotly to render inside notebooks
+nbconvert[webpdf]==7.17.2   # run / export the notebook; webpdf = PDF via headless Chromium
+# after installing, once:  playwright install chromium
+# export the PDF:          jupyter nbconvert --to webpdf <notebook>.ipynb

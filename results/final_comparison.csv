@@ -1,0 +1,8 @@
+name,experiment,changes,epochs_to_converge,status,final_mse,speedup_vs_baseline,predictions
+baseline,baseline,-,231,converged,0.0099,1.0x,"[0.138, 0.099, 0.93, 0.93]"
+hidden relu,1 · hidden activation,activation_h=relu,185,converged,0.0099,1.2x,"[0.048, 0.176, 0.948, 0.947]"
+linear out + MSE,2 · output layer and loss,"activation_out=linear, loss=mean_squared_error",201,converged,0.0100,1.1x,"[0.106, 0.053, 1.108, 1.107]"
+init glorot_uniform,3 · initialization,init=glorot_uniform,199,converged,0.0099,1.2x,"[0.138, 0.097, 0.928, 0.929]"
+"2 hidden layers [8, 8]",4 · topology,"n_h=[8, 8]",68,converged,0.0091,3.4x,"[0.129, 0.051, 0.928, 0.909]"
+Adam lr=0.1,5 · optimizer / learning rate,"optimizer=adam, lr=0.1",39,converged,0.0078,5.9x,"[0.11, 0.073, 0.938, 0.944]"
+[optimizer] Adam lr=0.2,6 · combined,"n_h=[8, 8], activation_h=relu, init=he_normal, optimizer=adam, lr=0.2",10,converged,0.0014,23.1x,"[0.02, 0.021, 0.994, 0.997]"
